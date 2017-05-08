@@ -4,13 +4,21 @@
 
 一、如何配置MySQL
 1、在setting.py中配置DATABASES参数(我的MySQL登录和密码都为root)
+
 DATABASES = {
+
 	'default': {
+	
 	    'ENGINE': 'django.db.backends.mysql',
+	    
 	    'NAME': 'blog',
+	    
 	    'USER': 'root',
+	    
 	    'PASSWORD': 'root',
+	    
             'HOST': '127.0.0.1',
+	    
             'PORT': '3306'
         }
 }
@@ -18,8 +26,11 @@ DATABASES = {
 2、需要安装python的mysql插件
 
 #python2.7：  
+
 sudo pip install MySQLdb  
+
 #python3.4:  
+
 sudo pip install PyMySQL
 
 pip install mysqlclient
@@ -27,8 +38,11 @@ pip install mysqlclient
 二、编写数据库Model
 
 class Article(models.Model):
+
     title = models.CharField(max_length=32, default='title')
+    
     content = models.TextField(null=True)
+    
     pub_time = models.DateTimeField(auto_now=True)
 
     def __str__(self):
@@ -45,7 +59,9 @@ python manage.py migrate
 四、针对Admin的管理做了进一步的优化
 
 class ArticleAdmin(admin.ModelAdmin):
+
 	list_display = ('title', 'content', 'pub_time',)
+	
 	 # 过滤器
 	list_filter = ('pub_time',)
 

@@ -3,6 +3,7 @@
 基于Django+MySQL技术
 
 一、如何配置MySQL
+
 1、在setting.py中配置DATABASES参数(我的MySQL登录和密码都为root)
 
 DATABASES = {

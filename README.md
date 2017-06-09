@@ -80,7 +80,7 @@ blog访问链接:127.0.0.1/blog
 
 首页：
 
-![首页](https://github.com/Justshunjian/simpleblog/master/blog/static/imgages/index.png)
+![首页](https://github.com/Justshunjian/simpleblog/blob/master/blog/static/imgages/index.png)
 
 文章添加页面：
 
@@ -88,6 +88,6 @@ blog访问链接:127.0.0.1/blog
 
 文章编辑页面：
 
-![文章编辑页面](https://github.com/Justshunjian/simpleblog/master/blog/static/imgages/edit.png)
+![文章编辑页面](https://github.com/Justshunjian/simpleblog/blob/master/blog/static/imgages/edit.png)
 
 admin访问链接:127.0.0.1/admin

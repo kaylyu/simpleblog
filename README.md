@@ -57,6 +57,8 @@ python manage.py migrate
 
 执行成功之后，就可以在数据库blog中查看到迁移生成的数据表
 
+当然，你也可以直接使用blog/static/blog_article.sql在MySQL管理工具中导入
+
 四、针对Admin的管理做了进一步的优化
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -75,5 +77,17 @@ class ArticleAdmin(admin.ModelAdmin):
 python manage.py runserver
 
 blog访问链接:127.0.0.1/blog
+
+首页：
+
+![首页](https://github.com/Justshunjian/simpleblog/blog/static/imgages/index.png)
+
+文章添加页面：
+
+![文章添加页面](https://github.com/Justshunjian/simpleblog/blog/static/imgages/add.png)
+
+文章编辑页面：
+
+![文章编辑页面](https://github.com/Justshunjian/simpleblog/blog/static/imgages/edit.png)
 
 admin访问链接:127.0.0.1/admin
